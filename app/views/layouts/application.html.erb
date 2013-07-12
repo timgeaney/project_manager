@@ -2,12 +2,10 @@
 <html>
 <head>
   <title>ProjectManager</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <%= render :partial => "shared/includes" %>
 </head>
 <body>
-	<p id="notice"><%= notice ></p>
+	<p id="notice"><%= notice %></p>
 
 <%= yield %>
 
